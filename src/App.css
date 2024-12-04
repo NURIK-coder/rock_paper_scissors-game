@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+/* .read-the-docs {
+  color: #888;
+} */
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+.signs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90vw;
+}
+.header{
+  position: fixed;
+  top: 0;
+  right: 1px;
+  /* background-color: #f0f0f0; */
+  color: white;
+  width: 100%;
+  box-shadow: rgba(167, 169, 170, 0.992) 0px 7px 29px 0px;
+}
+.scissors{
+  transform: rotate(-90deg);
+}
+.btn{
+  color: white;
+  border-color: white;
+}
+.game{
+  display: flex;
+  justify-content: space-between;
+  
+}
+body{
+  background-image: url('./assets//backgorund.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.signs{
+  position: absolute;
+  bottom: 0px;
+  right: 1px;
+  background-color: #1f1f20;
+  width: 100%;
+  box-shadow: rgba(182, 180, 180, 0.937) 0px 5px 70px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  color:white;
+}
+.start{
+  color: white;
+  border-color: white;
+  width: 200px;
+  margin-top: 100px;
+}
+.cont{
+  width: 50vw;
+  
+}
+.img1{
+  width: 400px;
+}
+.img2{
+  width: 400px;
+}
+.animate-left {
+  
+  animation: move-left 0.5s infinite;
+}
+
+.animate-right {
+  animation: move-right 0.5s infinite;
+}
+
+@keyframes move-left {
+  0% { transform: translate(0, 0) rotate(0); }
+  50% { transform: translate(10px, 0) rotate(-10deg); }
+  100% { transform: translate(0, 0) rotate(0); }
+}
+
+@keyframes move-right {
+  0% { transform: translate(0, 0) rotate(0); }
+  50% { transform: translate(-10px, 0) rotate(10deg); }
+  100% { transform: translate(0, 0) rotate(0); }
+}
+.winLoseDrawP{
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-top: -200px;
+}
+.wrn{
+  color: red;
+  text-decoration: solid;
+  text-decoration-color: white;
+}
